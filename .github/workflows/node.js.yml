@@ -98,7 +98,7 @@ jobs:
   cypress-static-plugin-auth:
     runs-on: ubuntu-20.04
     container:
-      image: "corejam/cypress:0.0.3"
+      image: "corejam/cypress:0.0.4"
     needs: build
     steps:
       - uses: actions/checkout@v2
@@ -134,7 +134,7 @@ jobs:
   cypress-generateApp-monorepo:
     runs-on: ubuntu-20.04
     container:
-      image: "corejam/cypress:0.0.3"
+      image: "corejam/cypress:0.0.4"
     needs: build
     steps:
       - uses: actions/checkout@v2
@@ -173,7 +173,7 @@ jobs:
   cypress-generateApp-standalone:
     runs-on: ubuntu-20.04
     container:
-      image: "corejam/cypress:0.0.3"
+      image: "corejam/cypress:0.0.4"
     needs: build
     steps:
       - uses: actions/checkout@v2
@@ -217,7 +217,7 @@ jobs:
   cypress-generateApp-standaloneCLI:
     runs-on: ubuntu-20.04
     container:
-      image: "corejam/cypress:0.0.3"
+      image: "corejam/cypress:0.0.4"
     needs: build
     steps:
       - uses: actions/checkout@v2
@@ -262,7 +262,7 @@ jobs:
   cypress:
     runs-on: ubuntu-20.04
     container:
-      image: "corejam/cypress:0.0.3"
+      image: "corejam/cypress:0.0.4"
     needs:
       - integration-tests
       - cypress-static-plugin-auth

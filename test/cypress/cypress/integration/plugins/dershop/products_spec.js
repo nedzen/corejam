@@ -1,5 +1,10 @@
 var faker = require("faker");
 
+//Function to generate random number
+const randomGenerator = (number) => {
+  return Math.round(Math.random() * (number - 1));
+};
+
 describe("Products", function () {
   it("Product List is there", function () {
     cy.visit("/products");
@@ -68,9 +73,4 @@ describe("Products", function () {
           });
       });
   });
-
-  //Function to generate random number
-  const randomGenerator = (number) => {
-    return Math.round(Math.random() * (number - 1));
-  };
 });

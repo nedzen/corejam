@@ -81,7 +81,7 @@ export class CjDebugger {
     return (
       <Host>
         <corejam-box bg="white" position="fixed" h="400px" bottom={0} w={12}>
-          <corejam-box position="absolute" bottom={25} left={25} onClick={() => this.toggleMenu()} z={300}>
+          <corejam-box data-cy="corejam-builder" position="absolute" bottom={25} left={25} onClick={() => this.toggleMenu()} z={300}>
             <Corejam w="30px" h="30px" />
           </corejam-box>
           <corejam-box
